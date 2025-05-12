@@ -7,8 +7,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Orgalib",
+  title: "OrgaLib",
   description: "The book organization app",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
+      { url: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/site.webmanifest",
+  appleWebApp: {
+    title: "OrgaLib",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
